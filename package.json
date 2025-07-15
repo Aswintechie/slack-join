@@ -19,7 +19,8 @@
     "cors": "^2.8.5",
     "email-regex": "^1.0.0",
     "undici": "^7.11.0",
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "^2.1.1",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "@types/node": "^20.0.0"

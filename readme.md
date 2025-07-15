@@ -46,11 +46,26 @@ cd slack-join
 # Install dependencies
 npm install
 
+# Set up environment variables
+cp env.example .env
+# Edit .env with your Slack and reCAPTCHA credentials
+
 # Start the server
 npm start
 ```
 
 ### Environment Variables
+
+**Option 1: Using .env file (Recommended)**
+
+Copy the example environment file and edit it with your values:
+
+```bash
+cp env.example .env
+# Edit .env with your actual values
+```
+
+**Option 2: Export manually**
 
 Set these environment variables or pass them as command line arguments:
 
