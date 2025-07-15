@@ -27,6 +27,18 @@ This is the easiest one - it's just your Slack workspace name.
 
 You need a Slack API token with **admin privileges** to invite users.
 
+### ⚠️ **Important: Free Plan Limitations**
+
+**Slack Free Plan CAN work with slackin, BUT with significant limitations:**
+
+- ✅ **API tokens available** - You can still get API tokens on free plans
+- ⚠️ **Admin required** - You must be a workspace admin to invite users
+- ⚠️ **10 app limit** - Free plans limited to 10 app installations total
+- ⚠️ **Strict rate limits** - New 2025 restrictions severely limit API calls for non-Marketplace apps
+- ⚠️ **90-day history** - Only recent messages/files visible
+
+**💡 Recommendation**: Slackin works on free plans but paid plans provide a much better experience with higher rate limits and no app installation restrictions.
+
 ### Step-by-Step Instructions:
 
 #### Option A: Legacy Token (Easiest)
@@ -68,6 +80,27 @@ You need a Slack API token with **admin privileges** to invite users.
 - **Keep your token secret** - don't share it publicly
 - **Use Bot tokens** when possible (more secure)
 - **Admin privileges required** for inviting users
+
+### 🚨 **2025 API Rate Limit Changes**
+
+**Important for Free Plan Users:**
+
+Starting May 29, 2025, Slack implemented severe rate limit restrictions for non-Marketplace apps:
+
+- **conversations.history**: 1 request per minute (was 50+)
+- **conversations.replies**: 1 request per minute (was 50+)
+- **Apps created before May 29, 2025**: Keep higher limits until Sept 2, 2025
+- **Internal customer apps**: Retain higher limits permanently
+
+**What this means for slackin:**
+- ✅ **Basic functionality works** - inviting users, showing user counts
+- ⚠️ **Slower data updates** - user count updates will be less frequent
+- ✅ **Legacy tokens** - May have better rate limits than new OAuth apps
+
+**Solutions:**
+1. **Use legacy tokens** (often better rate limits)
+2. **Submit to Slack Marketplace** (removes rate limits)
+3. **Accept slower updates** (still functional, just less real-time)
 
 ---
 
@@ -186,6 +219,38 @@ Visit `http://localhost:3000` to see your invite page!
 3. **Rotate tokens regularly** 
 4. **Limit token scopes** to minimum required
 5. **Monitor token usage** in Slack admin
+
+---
+
+## 🆓 **Free Plan Summary**
+
+### ✅ **What Works on Slack Free Plan:**
+- **Basic slackin functionality** - invite page, user invitations
+- **API token generation** - legacy tokens and OAuth apps both work
+- **reCAPTCHA integration** - no plan restrictions
+- **User count display** - shows online/total users (with slower updates)
+- **All slackin features** - embed codes, badges, iframe support
+
+### ⚠️ **Free Plan Limitations:**
+- **10 app maximum** - slackin counts as 1 of your 10 allowed apps
+- **Slower updates** - user counts update less frequently due to rate limits
+- **90-day message history** - older Slack data not accessible
+- **Admin required** - you must be workspace admin to generate invite tokens
+
+### 💰 **When to Upgrade to Paid Plan:**
+- **High traffic** - need real-time user count updates
+- **Many apps** - already using 10+ integrations
+- **Advanced features** - SSO, advanced admin controls, unlimited history
+- **Commercial use** - better rate limits and support for business usage
+
+### 🎯 **Free Plan Recommendation:**
+Slackin works perfectly fine on Slack free plans for:
+- **Small teams** (under 10 people)
+- **Personal projects** 
+- **Testing/development**
+- **Low-traffic invite pages**
+
+For high-traffic or commercial use, consider upgrading to a paid Slack plan for better performance and reliability.
 
 ---
 

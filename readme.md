@@ -36,6 +36,17 @@ This is a **completely modernized** version of the original slackin project with
 
 > 📖 **Need help getting tokens?** See [SETUP.md](SETUP.md) for detailed step-by-step instructions.
 
+### 🆓 **Free Plan Compatibility**
+
+**✅ Slackin works on Slack FREE plans!**
+
+- Works with free Slack workspaces (with limitations)
+- You must be a workspace admin to generate API tokens
+- User count updates will be slower due to 2025 API rate limits
+- Uses 1 of your 10 allowed app installations
+
+> 📋 **Full details**: See [Free Plan Summary](SETUP.md#-free-plan-summary) in SETUP.md
+
 ## 🚀 Quick Start
 
 ### Installation
