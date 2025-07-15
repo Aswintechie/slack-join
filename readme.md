@@ -34,6 +34,8 @@ This is a **completely modernized** version of the original slackin project with
 - **Slack API token** with admin privileges
 - **Google reCAPTCHA** site key and secret
 
+> 📖 **Need help getting tokens?** See [SETUP.md](SETUP.md) for detailed step-by-step instructions.
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -49,6 +51,7 @@ npm install
 # Set up environment variables
 cp env.example .env
 # Edit .env with your Slack and reCAPTCHA credentials
+# See SETUP.md for detailed instructions on getting tokens
 
 # Start the server
 npm start
@@ -75,6 +78,17 @@ export SLACK_API_TOKEN=xoxp-your-token
 export GOOGLE_CAPTCHA_SECRET=your-secret
 export GOOGLE_CAPTCHA_SITEKEY=your-sitekey
 ```
+
+### 🔑 Quick Token Reference
+
+| Token | Where to Get It | Example |
+|-------|----------------|---------|
+| `SLACK_SUBDOMAIN` | Your Slack URL: `https://TEAM.slack.com` | `mycompany` |
+| `SLACK_API_TOKEN` | [Slack API](https://api.slack.com/legacy/custom-integrations/legacy-tokens) | `xoxp-123...` |
+| `GOOGLE_CAPTCHA_SECRET` | [reCAPTCHA Admin](https://www.google.com/recaptcha/admin) | `6LcYYY...` |
+| `GOOGLE_CAPTCHA_SITEKEY` | [reCAPTCHA Admin](https://www.google.com/recaptcha/admin) | `6LcXXX...` |
+
+> 📋 **Detailed instructions**: See [SETUP.md](SETUP.md) for complete step-by-step guides.
 
 ### Command Line Usage
 
